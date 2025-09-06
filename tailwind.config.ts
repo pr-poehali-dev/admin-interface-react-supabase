@@ -19,6 +19,10 @@ export default {
 		},
 		extend: {
 			colors: {
+				indigo: '#634444',
+				green: '#F5998B',
+				red: '#EF4441',
+				gray: '#1F2937',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -63,6 +67,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
+			backgroundImage: {
+				'gradient-admin': 'linear-gradient(135deg, #634444 0%, #8B5CF6 100%)',
+				'gradient-card': 'linear-gradient(135deg, #F5998B 0%, #EF4441 100%)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -88,7 +99,10 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.5s ease-out',
+				'slide-up': 'slideUp 0.3s ease-out',
+				'scale-in': 'scaleIn 0.2s ease-out'
 			}
 		}
 	},
